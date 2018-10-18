@@ -2,8 +2,8 @@
 <view>
     <view class="card-container">
         <view class="empty-content" wx:if="{{!records.length}}">你还没有任何重要日子哦，快去创建你的重要日子吧!</view>
-        <i-card wx:for="{{records}}" wx:for-index="idx" wx:for-item="item" title="{{item.name}}" full="{{true}}" extra="{{timeTextConv(item.date)}}" thumb="{{'../../images/'+item.img_url}}">
-            <view slot="content">内容不错</view>
+        <i-card wx:for="{{records}}" wx:for-index="idx" wx:for-item="item" wx:key="idx" title="{{item.name}}" full="{{true}}" extra="{{item.dateText}}" thumb="{{'../../images/'+item.img_url}}">
+            <view slot="content">{{item.remarks}}</view>
         </i-card>
     </view>
     <view class="button-container">
@@ -11,4 +11,5 @@
             创建重要日子
         </i-button>
     </view>
+    <i-spin wx:if="{{loading}}" fix></i-spin>
 </view>

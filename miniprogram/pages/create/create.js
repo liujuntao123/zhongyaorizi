@@ -103,7 +103,7 @@ Page({
                     type: 'success',
                 })
                 setTimeout(() => {
-                    wx.navigateTo({
+                    wx.redirectTo({
                         url: '/pages/index/index',
                     })
                 }, 500)

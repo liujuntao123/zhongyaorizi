@@ -15,7 +15,7 @@ exports.main = async (event, context) => {
     if(!data.name){
         return null
     }
-    data.img_url=getRandom(0,32)+'.png'
+    data.img_url=getRandom(1,32)+'.png'
     // 删除为假删除,isUsed=0为删除
     data.isUsed=1
     return collectionObj.add({
