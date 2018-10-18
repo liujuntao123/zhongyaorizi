@@ -1,0 +1,15 @@
+<!-- pages/index/home/home.wxml -->
+<view>
+    <view class="card-container">
+        <view class="empty-content" wx:if="{{!records.length}}">你还没有任何重要日子哦，快去创建你的重要日子吧!</view>
+        <i-card wx:for="{{records}}" wx:for-index="idx" wx:for-item="item" title="{{item.name}}" full="{{true}}" extra="{{timeTextConv(item.date)}}" thumb="{{'../../images/'+item.img_url}}">
+            <view slot="content">内容不错</view>
+        </i-card>
+    </view>
+    <view class="button-container">
+        <!-- <i-button class="my-button" bind:click="handleClick" type="info" shape="circle">增加纪念日</i-button> -->
+        <i-button class="my-button" bind:click="handleCreateRecord" type="success" shape="circle">
+            创建重要日子
+        </i-button>
+    </view>
+</view>

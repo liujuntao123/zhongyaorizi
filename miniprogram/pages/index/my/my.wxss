@@ -1,0 +1,27 @@
+/* pages/index/my/my.wxss */
+.user-profile{
+    overflow:hidden;
+    position:relative;
+}
+.avatar,.content,.setting-button-container{
+    float:left;
+    padding:15px;
+}
+
+.my-button{
+    position:absolute;
+    right:5px;
+    top:15px;
+    width:90px;
+}
+.img{
+    width:60px;
+    height:60px;
+}
+.nick{
+    font-size: 25px;
+    font-weight: bold;
+}
+.sub-title{
+    font-size:14px;
+}

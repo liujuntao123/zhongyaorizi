@@ -1,0 +1,38 @@
+<!--pages/index/my/my.wxml-->
+<view>
+    <view class="user-profile">
+        <view class="avatar">
+            <image class="img" mode="aspectFit" src="https://i.loli.net/2017/08/21/599a521472424.jpg" />
+        </view>
+        <view class="content">
+            <view class="nick">会飞小超人</view>
+            <view class="sub-title">共有5个重要日子</view>
+        </view>
+        <view class="setting-button-container">
+            <i-button class="my-button" bind:click="handleSetting" type="success" size="small" shape="circle">设置</i-button>
+        </view>
+    </view>
+    <view class="caption-wrap">
+        <i-collapse name="{{name}}">
+            <i-collapse-item title="倒数日" name="name1">
+                <view slot="content">
+                    <i-cell-group>
+                        <i-cell title="日程一" is-link url="/pages/create/create"></i-cell>
+                        <i-cell title="日程二" is-link url="/pages/create/create"></i-cell>
+                        <i-cell title="日程三" is-link url="/pages/create/create" ></i-cell>
+                    </i-cell-group>
+                </view>
+            </i-collapse-item>
+            <i-collapse-item title="纪念日" name="name2">
+                <view slot="content" i-class-content="green-text">
+                    <i-cell-group>
+                        <i-cell title="日程一" is-link url="/pages/create/create"></i-cell>
+                        <i-cell title="日程二" is-link url="/pages/create/create"></i-cell>
+                        <i-cell title="日程三" is-link url="/pages/create/create"></i-cell>
+                    </i-cell-group>
+                </view>
+            </i-collapse-item>
+        </i-collapse>
+    </view>
+
+</view>

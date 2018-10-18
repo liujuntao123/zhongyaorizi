@@ -1,0 +1,6 @@
+<!-- pages/index/calendar/calendar.wxml -->
+<view>
+    <view class="calendar-container">
+        <calendar cell-size="30" calendar-style="demo5-calendar" header-style="demo5-header" board-style="demo5-board" days-color="{{demo5_days_style}}" lunar="{{false}}" weeks-type="cn" show-more-days="{{true}}" />
+    </view>
+</view>

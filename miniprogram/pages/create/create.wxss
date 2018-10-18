@@ -1,0 +1,7 @@
+/* pages/create/create.wxss */
+.button-container{
+    padding-top: 15px;
+}
+.switch-cell{
+    width: 125px;
+}
